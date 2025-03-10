@@ -101,21 +101,6 @@ namespace CropDealBackend.Controllers
             }
         }
 
-        //// ✅ Get recently added crop types (last X days)
-        //[HttpGet("recent/{days}")]
-        //public async Task<ActionResult<IEnumerable<CropType>>> GetRecentlyAddedCropTypes(int days)
-        //{
-        //    try
-        //    {
-        //        var cropTypes = await cropTypeRepository.GetRecentlyAddedCropTypes(days);
-        //        return Ok(cropTypes);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(500, $"Internal Server Error: {ex.Message}");
-        //    }
-        //}
-
         // ✅ Get the most popular crop types
         [HttpGet("popular")]
         public async Task<ActionResult<IEnumerable<CropType>>> GetPopularCropTypes()

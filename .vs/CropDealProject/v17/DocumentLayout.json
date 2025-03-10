@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\userdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\userdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\repository\\userdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\repository\\userdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,20 +15,84 @@
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\iuserdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\repository\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\repository\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\transactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\transactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\itransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\itransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\repository\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\repository\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\invoicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\invoicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\cropdealcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\cropdealcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\iinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\iinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\croptypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\croptypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\cropdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\cropdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\userdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\userdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\repository\\croptyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\repository\\croptyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\repository\\cropdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\repository\\cropdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\icroptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\icroptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\icropdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\icropdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\bankdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\bankdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\repository\\bankdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\repository\\bankdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\ibankdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\ibankdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\addontypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\addontypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\repository\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,6 +107,26 @@
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\repository\\addontyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\iaddontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\iaddontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\addon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\addon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\iadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\iadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\addoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\addoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\iaddon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\iaddon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,20 +135,8 @@
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\userdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\icropdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\icropdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\cropdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\cropdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\iinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\iinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\addon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\addon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\addontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,20 +151,8 @@
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\croptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\invoicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\invoicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\subscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,60 +175,16 @@
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\bankdetailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\itransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\itransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\isubscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\isubscription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\icroptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\icroptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\ibankdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\ibankdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\iadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\iadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\iaddontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\iaddontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\interfaces\\iaddon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\interfaces\\iaddon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\croptypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\croptypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\cropdetailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\cropdetailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\addontypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\addontypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\repository\\croptyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\repository\\croptyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\repository\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\repository\\invoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\subscriptionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\subscriptionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\transactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\models\\transactionvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\models\\croptypevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -179,28 +199,12 @@
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\repository\\subscriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\addoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\addoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\subscriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\controllers\\bankdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\controllers\\bankdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|c:\\tejashri\\sprint\\backend\\cropdealbackend\\cropdealbackend\\repository\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33090CD6-2E55-42AF-AEB4-344CFC9D2B08}|CropDealBackend\\CropDealBackend.csproj|solutionrelative:cropdealbackend\\repository\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -210,17 +214,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "CropDealBackend\\Controllers\\TransactionController.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAqwJsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:08:49.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserDetailRepository.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\UserDetailRepository.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Repository\\UserDetailRepository.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\UserDetailRepository.cs",
+              "RelativeToolTip": "CropDealBackend\\Repository\\UserDetailRepository.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAiwJIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:32:42.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UserDetailController.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\UserDetailController.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\UserDetailController.cs",
               "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\UserDetailController.cs",
               "RelativeToolTip": "CropDealBackend\\Controllers\\UserDetailController.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAuwI8AAABGAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwKsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T06:09:21.064Z",
               "EditorCaption": ""
@@ -228,71 +258,266 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CropDetailController.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\CropDetailController.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\CropDetailController.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\CropDetailController.cs",
-              "RelativeToolTip": "CropDealBackend\\Controllers\\CropDetailController.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAiwH0AAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:06:41.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "IUserDetail.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IUserDetail.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\IUserDetail.cs",
               "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IUserDetail.cs",
               "RelativeToolTip": "CropDealBackend\\Interfaces\\IUserDetail.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAA2wCAAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswBwAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T06:22:36.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserDetailRepository.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\UserDetailRepository.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Repository\\UserDetailRepository.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\UserDetailRepository.cs",
-              "RelativeToolTip": "CropDealBackend\\Repository\\UserDetailRepository.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAiwH0AAAAyAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "TransactionRepository.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\TransactionRepository.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Repository\\TransactionRepository.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\TransactionRepository.cs",
+              "RelativeToolTip": "CropDealBackend\\Repository\\TransactionRepository.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAADwv4IAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:32:42.062Z",
+              "WhenOpened": "2025-03-05T06:32:20.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "TransactionVM.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\TransactionVM.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Models\\TransactionVM.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\TransactionVM.cs",
+              "RelativeToolTip": "CropDealBackend\\Models\\TransactionVM.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T09:18:18.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Models\\Transaction.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\Transaction.cs",
+              "RelativeToolTip": "CropDealBackend\\Models\\Transaction.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAYwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T07:00:38.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ITransaction.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ITransaction.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\ITransaction.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ITransaction.cs",
+              "RelativeToolTip": "CropDealBackend\\Interfaces\\ITransaction.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:22:12.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InvoiceRepository.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\InvoiceRepository.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Repository\\InvoiceRepository.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\InvoiceRepository.cs",
+              "RelativeToolTip": "CropDealBackend\\Repository\\InvoiceRepository.cs",
+              "ViewState": "AgIAABMBAAAAAAAAAAAqwBwBAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:31:35.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InvoiceVM.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\InvoiceVM.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Models\\InvoiceVM.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\InvoiceVM.cs",
+              "RelativeToolTip": "CropDealBackend\\Models\\InvoiceVM.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T09:17:42.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\Invoice.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Models\\Invoice.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\Invoice.cs",
+              "RelativeToolTip": "CropDealBackend\\Models\\Invoice.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T09:19:27.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CropDealContext.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\CropDealContext.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Models\\CropDealContext.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\CropDealContext.cs",
+              "RelativeToolTip": "CropDealBackend\\Models\\CropDealContext.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAAAuwMcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T12:17:10.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IInvoice.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IInvoice.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\IInvoice.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IInvoice.cs",
+              "RelativeToolTip": "CropDealBackend\\Interfaces\\IInvoice.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwvzMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:21:17.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CropTypeController.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\CropTypeController.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\CropTypeController.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\CropTypeController.cs",
+              "RelativeToolTip": "CropDealBackend\\Controllers\\CropTypeController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAmwHEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:07:20.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CropDetailController.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\CropDetailController.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\CropDetailController.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\CropDetailController.cs",
+              "RelativeToolTip": "CropDealBackend\\Controllers\\CropDetailController.cs",
+              "ViewState": "AgIAAAYBAAAAAAAAAAAAABYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:06:41.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CropTypeRepository.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\CropTypeRepository.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Repository\\CropTypeRepository.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\CropTypeRepository.cs",
+              "RelativeToolTip": "CropDealBackend\\Repository\\CropTypeRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAiwDgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:30:07.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "CropDetailRepository.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\CropDetailRepository.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Repository\\CropDetailRepository.cs",
               "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\CropDetailRepository.cs",
               "RelativeToolTip": "CropDealBackend\\Repository\\CropDetailRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAiwBQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T06:29:41.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
+              "Title": "ICropType.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ICropType.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\ICropType.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ICropType.cs",
+              "RelativeToolTip": "CropDealBackend\\Interfaces\\ICropType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:19:38.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ICropDetail.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ICropDetail.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\ICropDetail.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ICropDetail.cs",
+              "RelativeToolTip": "CropDealBackend\\Interfaces\\ICropDetail.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAA3wC0AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:18:49.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BankDetailController.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\BankDetailController.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\BankDetailController.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\BankDetailController.cs",
+              "RelativeToolTip": "CropDealBackend\\Controllers\\BankDetailController.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAABMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:05:27.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "BankDetailRepository.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\BankDetailRepository.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Repository\\BankDetailRepository.cs",
               "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\BankDetailRepository.cs",
               "RelativeToolTip": "CropDealBackend\\Repository\\BankDetailRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T06:28:48.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
+              "Title": "IBankDetail.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IBankDetail.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\IBankDetail.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IBankDetail.cs",
+              "RelativeToolTip": "CropDealBackend\\Interfaces\\IBankDetail.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:15:45.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AddOnTypeController.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\AddOnTypeController.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\AddOnTypeController.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\AddOnTypeController.cs",
+              "RelativeToolTip": "CropDealBackend\\Controllers\\AddOnTypeController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAiwEcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:04:05.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "AdminRepository.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\AdminRepository.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Repository\\AdminRepository.cs",
@@ -305,45 +530,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 24,
               "Title": "AddOnRepository.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\AddOnRepository.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Repository\\AddOnRepository.cs",
               "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\AddOnRepository.cs",
               "RelativeToolTip": "CropDealBackend\\Repository\\AddOnRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwB0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T06:23:03.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 25,
               "Title": "AddOnTypeRepository.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\AddOnTypeRepository.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Repository\\AddOnTypeRepository.cs",
               "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\AddOnTypeRepository.cs",
               "RelativeToolTip": "CropDealBackend\\Repository\\AddOnTypeRepository.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAswDkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T06:26:29.315Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ICropDetail.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ICropDetail.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\ICropDetail.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ICropDetail.cs",
-              "RelativeToolTip": "CropDealBackend\\Interfaces\\ICropDetail.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAA3wCoAAAApAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "IAddOnType.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IAddOnType.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\IAddOnType.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IAddOnType.cs",
+              "RelativeToolTip": "CropDealBackend\\Interfaces\\IAddOnType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:18:49.652Z"
+              "WhenOpened": "2025-03-05T06:13:47.689Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 27,
+              "Title": "AddOn.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\AddOn.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Models\\AddOn.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\AddOn.cs",
+              "RelativeToolTip": "CropDealBackend\\Models\\AddOn.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T04:39:21.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IAdmin.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IAdmin.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\IAdmin.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IAdmin.cs",
+              "RelativeToolTip": "CropDealBackend\\Interfaces\\IAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:14:16.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AddOnController.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\AddOnController.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\AddOnController.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\AddOnController.cs",
+              "RelativeToolTip": "CropDealBackend\\Controllers\\AddOnController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:02:59.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IAddOn.cs",
+              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IAddOn.cs",
+              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\IAddOn.cs",
+              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IAddOn.cs",
+              "RelativeToolTip": "CropDealBackend\\Interfaces\\IAddOn.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA9wBwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T06:13:18.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "UserDetail.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\UserDetail.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\UserDetail.cs",
@@ -355,19 +633,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IInvoice.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IInvoice.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\IInvoice.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IInvoice.cs",
-              "RelativeToolTip": "CropDealBackend\\Interfaces\\IInvoice.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAADwvz4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:21:17.499Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 31,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Program.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Program.cs",
@@ -375,24 +641,11 @@
               "RelativeToolTip": "CropDealBackend\\Program.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAiwBgAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T05:01:21.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T05:01:21.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AddOn.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\AddOn.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Models\\AddOn.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\AddOn.cs",
-              "RelativeToolTip": "CropDealBackend\\Models\\AddOn.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA7wBUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T04:39:21.313Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 33,
               "Title": "CropDetail.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\CropDetail.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\CropDetail.cs",
@@ -404,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 34,
               "Title": "AddOnType.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\AddOnType.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\AddOnType.cs",
@@ -416,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 35,
               "Title": "BankDetail.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\BankDetail.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\BankDetail.cs",
@@ -428,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 36,
               "Title": "CropType.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\CropType.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\CropType.cs",
@@ -440,31 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Invoice.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\Invoice.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Models\\Invoice.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\Invoice.cs",
-              "RelativeToolTip": "CropDealBackend\\Models\\Invoice.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA7wB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T09:19:27.132Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "InvoiceVM.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\InvoiceVM.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Models\\InvoiceVM.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\InvoiceVM.cs",
-              "RelativeToolTip": "CropDealBackend\\Models\\InvoiceVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T09:17:42.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 37,
               "Title": "Subscription.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\Subscription.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\Subscription.cs",
@@ -476,19 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\Transaction.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Models\\Transaction.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\Transaction.cs",
-              "RelativeToolTip": "CropDealBackend\\Models\\Transaction.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA7wB0AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T07:00:38.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 38,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\Admin.cs",
@@ -500,7 +717,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 39,
               "Title": "AddOnVM.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\AddOnVM.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\AddOnVM.cs",
@@ -512,7 +729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 40,
               "Title": "AddonTypeVM.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\AddonTypeVM.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\AddonTypeVM.cs",
@@ -524,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 41,
               "Title": "UserDetailVM.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\UserDetailVM.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\UserDetailVM.cs",
@@ -536,7 +753,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 42,
               "Title": "BankDetailVM.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\BankDetailVM.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\BankDetailVM.cs",
@@ -548,19 +765,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ITransaction.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ITransaction.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\ITransaction.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ITransaction.cs",
-              "RelativeToolTip": "CropDealBackend\\Interfaces\\ITransaction.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA/wB4AAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:22:12.318Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 43,
               "Title": "ISubscription.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ISubscription.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\ISubscription.cs",
@@ -572,79 +777,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ICropType.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ICropType.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\ICropType.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\ICropType.cs",
-              "RelativeToolTip": "CropDealBackend\\Interfaces\\ICropType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:19:38.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "IBankDetail.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IBankDetail.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\IBankDetail.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IBankDetail.cs",
-              "RelativeToolTip": "CropDealBackend\\Interfaces\\IBankDetail.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADwvxoAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:15:45.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IAdmin.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IAdmin.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\IAdmin.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IAdmin.cs",
-              "RelativeToolTip": "CropDealBackend\\Interfaces\\IAdmin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:14:16.479Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "IAddOnType.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IAddOnType.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\IAddOnType.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IAddOnType.cs",
-              "RelativeToolTip": "CropDealBackend\\Interfaces\\IAddOnType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:13:47.689Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IAddOn.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IAddOn.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Interfaces\\IAddOn.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Interfaces\\IAddOn.cs",
-              "RelativeToolTip": "CropDealBackend\\Interfaces\\IAddOn.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABYAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:13:18.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "CropTypeController.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\CropTypeController.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\CropTypeController.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\CropTypeController.cs",
-              "RelativeToolTip": "CropDealBackend\\Controllers\\CropTypeController.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAswHQAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:07:20.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 44,
               "Title": "CropDetailVM.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\CropDetailVM.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\CropDetailVM.cs",
@@ -656,43 +789,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "AddOnTypeController.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\AddOnTypeController.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\AddOnTypeController.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\AddOnTypeController.cs",
-              "RelativeToolTip": "CropDealBackend\\Controllers\\AddOnTypeController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAowE8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:04:05.027Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "CropTypeRepository.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\CropTypeRepository.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Repository\\CropTypeRepository.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\CropTypeRepository.cs",
-              "RelativeToolTip": "CropDealBackend\\Repository\\CropTypeRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowEYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:30:07.67Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "InvoiceRepository.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\InvoiceRepository.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Repository\\InvoiceRepository.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\InvoiceRepository.cs",
-              "RelativeToolTip": "CropDealBackend\\Repository\\InvoiceRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:31:35.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 45,
               "Title": "SubscriptionVM.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\SubscriptionVM.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\SubscriptionVM.cs",
@@ -704,19 +801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "TransactionVM.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\TransactionVM.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Models\\TransactionVM.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\TransactionVM.cs",
-              "RelativeToolTip": "CropDealBackend\\Models\\TransactionVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T09:18:18.657Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 46,
               "Title": "CropTypeVM.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Models\\CropTypeVM.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Models\\CropTypeVM.cs",
@@ -728,7 +813,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 47,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\AdminController.cs",
@@ -740,7 +825,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 48,
               "Title": "SubscriptionRepository.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\SubscriptionRepository.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Repository\\SubscriptionRepository.cs",
@@ -752,31 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "AddOnController.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\AddOnController.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\AddOnController.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\AddOnController.cs",
-              "RelativeToolTip": "CropDealBackend\\Controllers\\AddOnController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwCEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:02:59.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "TransactionController.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\TransactionController.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\TransactionController.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\TransactionController.cs",
-              "RelativeToolTip": "CropDealBackend\\Controllers\\TransactionController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:08:49.452Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "InvoiceController.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\InvoiceController.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\InvoiceController.cs",
@@ -788,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "SubscriptionController.cs",
               "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\SubscriptionController.cs",
               "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\SubscriptionController.cs",
@@ -797,30 +858,6 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T06:08:19.064Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "BankDetailController.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\BankDetailController.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Controllers\\BankDetailController.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Controllers\\BankDetailController.cs",
-              "RelativeToolTip": "CropDealBackend\\Controllers\\BankDetailController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:05:27.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "TransactionRepository.cs",
-              "DocumentMoniker": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\TransactionRepository.cs",
-              "RelativeDocumentMoniker": "CropDealBackend\\Repository\\TransactionRepository.cs",
-              "ToolTip": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\Repository\\TransactionRepository.cs",
-              "RelativeToolTip": "CropDealBackend\\Repository\\TransactionRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T06:32:20.759Z"
             }
           ]
         }

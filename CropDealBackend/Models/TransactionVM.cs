@@ -16,5 +16,11 @@
 
         public string TransactionMode { get; set; } = null!;
 
+        public int? FarmerBankAccId { get; set; }
+
+        public int? DealerBankAccId { get; set; }
+
+        public int? InvoiceId { get; set; }
+
     }
 }

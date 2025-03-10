@@ -76,15 +76,6 @@ namespace CropDealBackend.Controllers
             return NotFound(new { Message = "Add-on Type not found or deletion failed" });
         }
 
-        // ✅ Get Add-on Types recently added in last X days
-        //[HttpGet("recent/{days}")]
-        //public async Task<ActionResult<IEnumerable<AddOnType>>> GetRecentlyAddedAddonTypes(int days)
-        //{
-        //    var addonTypes = await _addOnTypeRepository.GetRecentlyAddedAddonTypes(days);
-        //    return Ok(addonTypes);
-        //}
-
-        // ✅ Get most popular Add-on Types
         [HttpGet("popular")]
         public async Task<ActionResult<IEnumerable<AddOnType>>> GetPopularAddonTypes()
         {

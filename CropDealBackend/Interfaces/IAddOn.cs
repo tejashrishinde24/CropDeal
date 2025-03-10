@@ -2,7 +2,7 @@
 
 namespace CropDealBackend.Interfaces
 {
-    public interface IAddon
+    public interface IAddOn
     {
         Task<IEnumerable<AddOn>> GetAllAddons();
         Task<AddOn> GetAddonById(int id);
@@ -10,7 +10,6 @@ namespace CropDealBackend.Interfaces
         Task<bool> AddAddon(AddOn addon);
         Task<bool> UpdateAddon(AddOn addon);
         Task<bool> DeleteAddon(int id);
-
 
 
         Task<IEnumerable<AddOn>> GetAddonsByAdminId(int adminId); // Get addons added by a specific admin  

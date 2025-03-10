@@ -4,8 +4,6 @@
     {
         public int InvoiceId { get; set; }
 
-        public decimal Amount { get; set; }
-
         public DateTime? PurchaseDate { get; set; }
 
         public int DealerId { get; set; }
@@ -18,6 +16,12 @@
 
         public decimal PricePerKg { get; set; }
 
-        public decimal TotalAmount { get; set; }
+        public decimal? Quantity { get; set; }
+
+        public DateTime InvoiceDate { get; set; }
+
+        public decimal? TotalAmount { get; set; }
+
+        public int? AddOnId { get; set; }
     }
 }

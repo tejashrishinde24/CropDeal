@@ -53,17 +53,6 @@ namespace CropDealBackend.Repository
             _context.CropTypes.Remove(cropType);
             return await _context.SaveChangesAsync() > 0;
         }
-
-        // ✅ Get Recently Added Crop Types (within the last X days)
-        //public async Task<IEnumerable<CropType>> GetRecentlyAddedCropTypes(int days)
-        //{
-        //    DateTime recentDate = DateTime.UtcNow.AddDays(-days);
-        //    return await _context.CropTypes
-        //        .Where(ct => EF.Property<DateTime>(ct, "CreatedAt") >= recentDate)
-        //        .ToListAsync();
-        //}
-
-        // ✅ Get Most Popular Crop Types (based on the number of crops in CropDetails)
         public async Task<IEnumerable<CropType>> GetPopularCropTypes()
         {
             return await _context.CropTypes
