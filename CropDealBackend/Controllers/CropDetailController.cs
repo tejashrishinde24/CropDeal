@@ -117,7 +117,19 @@ namespace CropDealBackend.Controllers
             return Ok(count);
         }
 
+        [HttpPatch("{id}/availability")]
+        public async Task<IActionResult> UpdateCropAvailability(int id, [FromBody] decimal quantityAvailable)
+        {
+            if (quantityAvailable < 0)
+                return BadRequest("Quantity must be greater than or equal to 0");
 
+            var result = await _cropDetailRepository.UpdateCropAvailability(id, quantityAvailable);
+
+            if (!result)
+                return NotFound($"Crop with ID {id} not found");
+
+            return Ok(new { Message = "Crop availability updated successfully" });
+        }
 
 
         // ✅ Get recently restocked crops

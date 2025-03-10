@@ -7,8 +7,8 @@ namespace CropDealBackend.Interfaces
         Task<IEnumerable<UserDetail>> GetAllUsers();
         Task<UserDetail> GetUserById(int userId);
         Task<UserDetail> GetUserByEmail(string email);
-        Task<bool> CreateUserDetail(UserDetail user);
-        Task<bool> UpdateUserDetail(int userId,UserDetail user);
+        Task<bool> CreateUserDetail(UserDetailVM user);
+        Task<bool> UpdateUserDetail(int userId,UserDetailVM user);
         Task<bool> DeleteUserDetail(int userId);
         // Retrieves a paginated list of users.
         Task<IEnumerable<UserDetail>> GetUsersWithPagination(int pageNumber, int pageSize);
@@ -31,5 +31,6 @@ namespace CropDealBackend.Interfaces
         // Retrieves users who registered in the last specified days.
         Task<IEnumerable<UserDetail>> GetRecentlyRegisteredUsers(int days);
         Task<IEnumerable<UserDetail>> GetDealerIdBySubscription(int subscribeId);
+        Task<bool> UpdateUserPassword(int userId, string newPassword);
     }
 }

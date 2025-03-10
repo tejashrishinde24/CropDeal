@@ -1182,6 +1182,51 @@
         }
       }
     },
+    "/api/CropDetail/{id}/availability": {
+      "patch": {
+        "tags": [
+          "CropDetail"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "number",
+                "format": "double"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "number",
+                "format": "double"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "number",
+                "format": "double"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/CropDetail/recently-restocked/{days}": {
       "get": {
         "tags": [
@@ -2688,17 +2733,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserDetail"
+                "$ref": "#/components/schemas/UserDetailVM"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserDetail"
+                "$ref": "#/components/schemas/UserDetailVM"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UserDetail"
+                "$ref": "#/components/schemas/UserDetailVM"
               }
             }
           }
@@ -2768,17 +2813,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserDetail"
+                "$ref": "#/components/schemas/UserDetailVM"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UserDetail"
+                "$ref": "#/components/schemas/UserDetailVM"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UserDetail"
+                "$ref": "#/components/schemas/UserDetailVM"
               }
             }
           }
@@ -3083,6 +3128,48 @@
         }
       }
     },
+    "/api/UserDetail/{id}/password": {
+      "patch": {
+        "tags": [
+          "UserDetail"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/UserDetail/inactive/{days}": {
       "get": {
         "tags": [
@@ -3303,11 +3390,27 @@
             "type": "string",
             "nullable": true
           },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
           "addOnType": {
             "$ref": "#/components/schemas/AddOnType"
           },
           "admin": {
             "$ref": "#/components/schemas/Admin"
+          },
+          "invoices": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Invoice"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -3403,7 +3506,18 @@
             "type": "string",
             "nullable": true
           },
-          "transactions": {
+          "addedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "transactionDealerBankAccs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Transaction"
+            },
+            "nullable": true
+          },
+          "transactionFarmerBankAccs": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Transaction"
@@ -3453,6 +3567,15 @@
           },
           "imageUrl": {
             "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
             "nullable": true
           },
           "cropType": {
@@ -3548,10 +3671,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "amount": {
-            "type": "number",
-            "format": "double"
-          },
           "purchaseDate": {
             "type": "string",
             "format": "date-time",
@@ -3577,9 +3696,27 @@
             "type": "number",
             "format": "double"
           },
+          "quantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "invoiceDate": {
+            "type": "string",
+            "format": "date-time"
+          },
           "totalAmount": {
             "type": "number",
-            "format": "double"
+            "format": "double",
+            "nullable": true
+          },
+          "addOnId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "addOn": {
+            "$ref": "#/components/schemas/AddOn"
           },
           "crop": {
             "$ref": "#/components/schemas/CropDetail"
@@ -3589,6 +3726,13 @@
           },
           "farmer": {
             "$ref": "#/components/schemas/UserDetail"
+          },
+          "transactions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Transaction"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -3608,6 +3752,13 @@
             "type": "integer",
             "format": "int32"
           },
+          "subscriptionDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isNotificationEnabled": {
+            "type": "boolean"
+          },
           "crop": {
             "$ref": "#/components/schemas/CropDetail"
           },
@@ -3623,14 +3774,6 @@
           "transactionId": {
             "type": "integer",
             "format": "int32"
-          },
-          "bankAccountId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "amount": {
-            "type": "number",
-            "format": "double"
           },
           "transactionDate": {
             "type": "string",
@@ -3649,14 +3792,35 @@
             "type": "string",
             "nullable": true
           },
-          "bankAccount": {
-            "$ref": "#/components/schemas/BankDetail"
+          "farmerBankAccId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dealerBankAccId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "invoiceId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           },
           "dealer": {
             "$ref": "#/components/schemas/UserDetail"
           },
+          "dealerBankAcc": {
+            "$ref": "#/components/schemas/BankDetail"
+          },
           "farmer": {
             "$ref": "#/components/schemas/UserDetail"
+          },
+          "farmerBankAcc": {
+            "$ref": "#/components/schemas/BankDetail"
+          },
+          "invoice": {
+            "$ref": "#/components/schemas/Invoice"
           }
         },
         "additionalProperties": false
@@ -3698,6 +3862,15 @@
           },
           "isActive": {
             "type": "boolean",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
             "nullable": true
           },
           "bankDetails": {
@@ -3747,6 +3920,48 @@
             "items": {
               "$ref": "#/components/schemas/Transaction"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserDetailVM": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailId": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "loginId": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
             "nullable": true
           }
         },

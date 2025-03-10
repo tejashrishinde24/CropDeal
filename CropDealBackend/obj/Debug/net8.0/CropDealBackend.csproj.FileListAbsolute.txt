@@ -286,3 +286,4 @@ C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\runt
 C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\obj\Debug\net8.0\CropDealBackend.sourcelink.json

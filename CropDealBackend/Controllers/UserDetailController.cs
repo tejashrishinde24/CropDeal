@@ -52,7 +52,7 @@ namespace CropDealBackend.Controllers
 
         // ✅ Create user
         [HttpPost]
-        public async Task<ActionResult> CreateUser([FromBody] UserDetail user)
+        public async Task<ActionResult> CreateUser([FromBody] UserDetailVM user)
         {
             if (user == null)
             {
@@ -69,7 +69,7 @@ namespace CropDealBackend.Controllers
 
         // ✅ Update user
         [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateUser(int id, [FromBody] UserDetail user)
+        public async Task<ActionResult> UpdateUser(int id, [FromBody] UserDetailVM user)
         {
             if (user == null)
             {
@@ -135,7 +135,19 @@ namespace CropDealBackend.Controllers
             var count = await userDetailRepository.GetTotalUsersCount();
             return Ok(count);
         }
+        [HttpPatch("{id}/password")]
+        public async Task<IActionResult> UpdateUserPassword(int id, [FromBody] string newPassword)
+        {
+            if (string.IsNullOrWhiteSpace(newPassword))
+                return BadRequest("Password cannot be empty");
 
+            var result = await userDetailRepository.UpdateUserPassword(id, newPassword);
+
+            if (!result)
+                return NotFound($"User with ID {id} not found");
+
+            return Ok(new { Message = "Password updated successfully" });
+        }
         // ✅ Get inactive users for last N days
         [HttpGet("inactive/{days}")]
         public async Task<ActionResult<IEnumerable<UserDetail>>> GetInactiveUsers(int days)

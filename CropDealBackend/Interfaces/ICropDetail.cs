@@ -40,6 +40,7 @@ namespace CropDealBackend.Interfaces
         Task<CropDetail> GetMostExpensiveCrop();
         Task<IEnumerable<CropDetail>> GetCropsWithSeller();
         Task<int> GetTotalCropCount();
+        Task<bool> UpdateCropAvailability(int cropId, decimal newQuantity);
         Task<IEnumerable<CropDetail>> GetRecentCrops();
         Task<IEnumerable<IEnumerable<CropDetail>>> GetCropsGroupedByCategory();
         Task<IEnumerable<CropDetail>> GetPopularCropTypes(); // Most sold or in demand

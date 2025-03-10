@@ -30,14 +30,25 @@ namespace CropDealBackend.Repository
         }
 
         // ✅ Create user
-        public async Task<bool> CreateUserDetail(UserDetail user)
+        public async Task<bool> CreateUserDetail(UserDetailVM userObj)
         {
+            UserDetail user = new UserDetail
+            {
+                Name = userObj.Name,
+                Role = userObj.Role,
+                Address = userObj.Address,
+                EmailId = userObj.EmailId,
+                PhoneNumber = userObj.PhoneNumber,
+                LoginId = userObj.LoginId,
+                Password = userObj.Password,
+                IsActive = userObj.IsActive
+            };
             await _context.UserDetails.AddAsync(user);
             return await _context.SaveChangesAsync() > 0;
         }
 
         // ✅ Update user
-        public async Task<bool> UpdateUserDetail(int userId, UserDetail user)
+        public async Task<bool> UpdateUserDetail(int userId, UserDetailVM user)
         {
             var existingUser = await _context.UserDetails.FindAsync(userId);
             if (existingUser == null) return false;
@@ -50,7 +61,7 @@ namespace CropDealBackend.Repository
             existingUser.LoginId = user.LoginId;
             existingUser.Password = user.Password;
             existingUser.IsActive = user.IsActive;
-            //existingUser.UpdatedAt = DateTime.UtcNow;
+            existingUser.UpdatedAt = DateTime.UtcNow;
             return await _context.SaveChangesAsync() > 0;
         }
 
@@ -94,7 +105,7 @@ namespace CropDealBackend.Repository
         {
             DateTime cutoffDate = DateTime.UtcNow.AddDays(-days);
             return await _context.UserDetails
-                .Where(u => u.IsActive == true && u.Id > 0)
+                .Where(u => u.IsActive == true && u.UpdatedAt >= cutoffDate)
                 .ToListAsync();
         }
 
@@ -109,19 +120,31 @@ namespace CropDealBackend.Repository
         {
             DateTime cutoffDate = DateTime.UtcNow.AddDays(-days);
             return await _context.UserDetails
-                .Where(u => u.IsActive == false)
+                .Where(u => u.IsActive == false )
                 .ToListAsync();
         }
+        public async Task<bool> UpdateUserPassword(int userId, string newPassword)
+        {
+            var user = await _context.UserDetails.FindAsync(userId);
 
+            if (user == null)
+                return false;
+
+            user.Password = newPassword;
+            user.UpdatedAt = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+            return true;
+        }
         // ✅ Get users who registered in the last N days
         public async Task<IEnumerable<UserDetail>> GetRecentlyRegisteredUsers(int days)
         {
             DateTime cutoffDate = DateTime.UtcNow.AddDays(-days);
             return await _context.UserDetails
-                .Where(u => u.Id > 0)
+                .Where(u => u.CreatedAt >= cutoffDate)
+                .AsQueryable()
                 .ToListAsync();
         }
-
         // ✅ Get Dealer IDs based on Subscription ID
         public async Task<IEnumerable<UserDetail>> GetDealerIdBySubscription(int subscribeId)
         {

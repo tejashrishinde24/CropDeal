@@ -56,14 +56,6 @@ namespace CropDealBackend.Repository
             return await _context.SaveChangesAsync() > 0;
         }
 
-        // ✅ Get Add-on Types recently added in last X days
-        //public async Task<IEnumerable<AddOnType>> GetRecentlyAddedAddonTypes(int days)
-        //{
-        //    DateTime recentDate = DateTime.UtcNow.AddDays(-days);
-        //    return await _context.AddOnTypes
-        //        .Where(a => EF.Property<DateTime>(a, "CreatedDate") >= recentDate)
-        //        .ToListAsync();
-        //}
 
         // ✅ Get most popular Add-on Types (based on purchase frequency)
         public async Task<IEnumerable<AddOnType>> GetPopularAddonTypes()

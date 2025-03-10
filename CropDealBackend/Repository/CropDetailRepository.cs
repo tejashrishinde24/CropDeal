@@ -223,15 +223,34 @@ return await _context.CropDetails
     .ToListAsync();
 }
 
-// Get recently restocked crops (within 'days' number of days)
-public async Task<IEnumerable<CropDetail>> GetRecentlyRestockedCrops(int days)
-{
-DateTime recentDate = DateTime.UtcNow.AddDays(-days);
-return null;
-}
+        // Get recently restocked crops (within 'days' number of days)
+        public async Task<IEnumerable<CropDetail>> GetRecentlyRestockedCrops(int days)
+        {
+            DateTime recentDate = DateTime.UtcNow.AddDays(-days);
 
-// Get crops by status (e.g., "Available", "Sold", "Pending")
-public async Task<IEnumerable<CropDetail>> GetCropsByStatus(string status)
+            return await _context.CropDetails
+                .Include(c => c.Farmer)
+                .Where(c => c.UpdatedAt >= recentDate) // Assuming you have a RestockDate field
+                .OrderByDescending(c => c.UpdatedAt)
+                .ToListAsync();
+        }
+
+        public async Task<bool> UpdateCropAvailability(int cropId, decimal newQuantity)
+        {
+            var crop = await _context.CropDetails.FindAsync(cropId);
+
+            if (crop == null)
+                return false;
+
+            crop.QuantityAvailable = newQuantity;
+            crop.UpdatedAt = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        // Get crops by status (e.g., "Available", "Sold", "Pending")
+        public async Task<IEnumerable<CropDetail>> GetCropsByStatus(string status)
 {
 return await _context.CropDetails
     .Where(c => c.Status.ToLower() == status.ToLower())
@@ -241,19 +260,23 @@ return await _context.CropDetails
 // Get crops with seller details (assuming a relationship exists)
 public async Task<IEnumerable<CropDetail>> GetCropsWithSeller()
 {
-    return await _context.CropDetails
-        .Include(c => c.Farmer) // Assuming 'Seller' is a navigation property
+            return await _context.CropDetails
+                .Include(c => c.Farmer).OrderBy(c => c.FarmerId) 
                 .ToListAsync();
         }
 
         // Get recently added crops (sorted by newest first)
         public async Task<IEnumerable<CropDetail>> GetRecentCrops()
-{
-return new List<CropDetail>();
-}
+        {
+            return await _context.CropDetails
+                .Include(c => c.Farmer)
+                .OrderByDescending(c => c.CreatedAt) 
+                .Take(10)
+                .ToListAsync();
+        }
 
-// Get crops grouped by category
-public async Task<IEnumerable<IEnumerable<CropDetail>>> GetCropsGroupedByCategory()
+        // Get crops grouped by category
+        public async Task<IEnumerable<IEnumerable<CropDetail>>> GetCropsGroupedByCategory()
 {
     return await _context.CropDetails
         .GroupBy(c => c.CropTypeId)
