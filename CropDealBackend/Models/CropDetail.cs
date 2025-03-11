@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CropDealBackend.Models;
 
@@ -28,7 +29,7 @@ public partial class CropDetail
     public DateTime? UpdatedAt { get; set; }
 
     public virtual CropType CropType { get; set; } = null!;
-
+    [NotMapped]
     public virtual UserDetail Farmer { get; set; } = null!;
 
     public virtual ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();

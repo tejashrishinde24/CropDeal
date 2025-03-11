@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CropDealBackend.Models;
 
@@ -30,9 +31,9 @@ public partial class Invoice
     public virtual AddOn? AddOn { get; set; }
 
     public virtual CropDetail Crop { get; set; } = null!;
-
+    [NotMapped]
     public virtual UserDetail Dealer { get; set; } = null!;
-
+    [NotMapped]
     public virtual UserDetail Farmer { get; set; } = null!;
 
     public virtual ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();

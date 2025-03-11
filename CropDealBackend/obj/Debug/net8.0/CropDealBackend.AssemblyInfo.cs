@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CropDealBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2391abff0384bc9386c2060c24648dce82de097")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d6940d8da1b528c5ac77de6b8aa8ab16f335c6e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CropDealBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CropDealBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

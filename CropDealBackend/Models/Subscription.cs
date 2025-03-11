@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CropDealBackend.Models;
 
@@ -16,6 +17,6 @@ public partial class Subscription
     public bool IsNotificationEnabled { get; set; }
 
     public virtual CropDetail Crop { get; set; } = null!;
-
+    [NotMapped]
     public virtual UserDetail Dealer { get; set; } = null!;
 }

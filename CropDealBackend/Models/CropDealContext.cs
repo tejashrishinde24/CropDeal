@@ -286,10 +286,7 @@ public partial class CropDealContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.Address).HasColumnType("text");
-            entity.Property(e => e.CreatedAt)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime")
-                .HasColumnName("createdAt");
+            entity.Property(e => e.CreatedAt).HasColumnName("createdAt");
             entity.Property(e => e.EmailId)
                 .HasMaxLength(255)
                 .IsUnicode(false);
