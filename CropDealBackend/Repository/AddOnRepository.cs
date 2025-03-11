@@ -27,43 +27,61 @@ namespace CropDealBackend.Repositories
             return result;
         }
 
-        public async Task<bool> AddAddon(AddOn addon)
+
+
+        public async Task<bool> AddAddon(AddOnVM addonVM)
         {
-            if (addon == null)
+            if (addonVM == null)
             {
                 return false;
             }
+            var addon = new AddOn
+            {
+                AdminId = addonVM.AdminId,
+                AddOnTypeId = addonVM.AddOnTypeId,
+                PricePerUnit = addonVM.PricePerUnit,
+                Quantity = addonVM.Quantity,
+                Description = addonVM.Description,
+                CreatedAt = DateTime.UtcNow, // Ensure CreatedAt is set
+                UpdatedAt = addonVM.UpdatedAt,
+                AddOnName = addonVM.AddOnName
+            };
+
+
             await _context.AddOns.AddAsync(addon);
             await _context.SaveChangesAsync();
             return true;
         }
 
-        public async Task<bool> UpdateAddon(AddOn addon)
+
+
+
+        public async Task<bool> UpdateAddon(AddOnVM addonVM)
         {
-            if (addon == null || addon.AddOnId <= 0)
+            if (addonVM == null || addonVM.AddOnId <= 0)
             {
                 return false;
             }
 
-            var existingaddon = await _context.AddOns.FindAsync(addon.AddOnId);
-            if (existingaddon == null)
+            var existingAddon = await _context.AddOns.FindAsync(addonVM.AddOnId);
+            if (existingAddon == null)
             {
-                return false;
+                return false; // Add-on not found
             }
-            existingaddon.AddOnId = addon.AddOnId;
-            existingaddon.AdminId = addon.AdminId;
-            existingaddon.Admin = addon.Admin;
-            existingaddon.AddOnTypeId = addon.AddOnTypeId;
-            existingaddon.AddOnType = addon.AddOnType;
-            existingaddon.Description = addon.Description;
-            existingaddon.PricePerUnit = addon.PricePerUnit;
-            existingaddon.Quantity = addon.Quantity;
 
-            _context.AddOns.Update(existingaddon); // Mark entity as modified
 
-            await _context.SaveChangesAsync();
+            existingAddon.AdminId = addonVM.AdminId;
+            existingAddon.AddOnTypeId = addonVM.AddOnTypeId;
+            existingAddon.Description = addonVM.Description;
+            existingAddon.PricePerUnit = addonVM.PricePerUnit;
+            existingAddon.Quantity = addonVM.Quantity;
+            existingAddon.AddOnName = addonVM.AddOnName;
+            existingAddon.UpdatedAt = DateTime.UtcNow; // Ensure UpdatedAt is set
+
+            await _context.SaveChangesAsync(); // Save changes asynchronously
             return true;
         }
+
 
         public async Task<bool> DeleteAddon(int id)
         {
@@ -87,7 +105,6 @@ namespace CropDealBackend.Repositories
             var result = await _context.AddOns.Where(x => x.PricePerUnit >= minPrice && x.PricePerUnit <= maxPrice).ToListAsync();
             return result;
         }
-
         public async Task<IEnumerable<AddOn>> GetAddonByAddOnType(int id)
         {
             var res = await _context.AddOns.Where(x => x.AddOnTypeId == id).ToListAsync();
@@ -109,6 +126,7 @@ namespace CropDealBackend.Repositories
             await _context.SaveChangesAsync();
             return true;
         }
+
 
         public async Task<bool> IsAddonAvailable(int addonId)
         {
@@ -179,13 +197,11 @@ namespace CropDealBackend.Repositories
             {
                 return false;
             }
-
             var result = await _context.AddOns.FindAsync(addonId);
             if (result == null)
             {
                 return false;
             }
-
             result.PricePerUnit = newPrice;
             await _context.SaveChangesAsync();
             return true;
@@ -218,7 +234,6 @@ namespace CropDealBackend.Repositories
             {
                 return new List<AddOn>(); // Return an empty list for invalid input
             }
-
             return await _context.AddOns.OrderBy(x => x.Quantity).Take(bottomN).ToListAsync();
         }
     }
