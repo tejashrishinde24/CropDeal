@@ -10,30 +10,52 @@ namespace CropDealBackend.Controllers
     [ApiController]
     public class CropDetailController : ControllerBase
     {
+        //Adding Dependancey Injection
         private readonly ICropDetail _cropDetailRepository;
+        //Injecting Logger 
+        private readonly ILogger<CropDetailController> _logger;
 
-        public CropDetailController(ICropDetail cropDetailRepository)
+        public CropDetailController(ICropDetail cropDetailRepository, ILogger<CropDetailController> logger)
         {
             _cropDetailRepository = cropDetailRepository;
+            _logger = logger;
+
         }
 
         // ✅ Get all crops
+
         [HttpGet]
+
         public async Task<ActionResult<IEnumerable<CropDetail>>> GetAllCrops()
         {
+            //LogInformation: Used for informational messages, like fetching crops or creating a crop.
+            _logger.LogInformation("Fetching all crops"); // Log information
             var crops = await _cropDetailRepository.GetAllCrops();
+
             return Ok(crops);
+
         }
 
         // ✅ Get crop by ID
+
         [HttpGet("{id}")]
+
         public async Task<ActionResult<CropDetail>> GetCropById(int id)
         {
+            _logger.LogInformation($"Fetching crop with ID: {id}"); // Log information
             var crop = await _cropDetailRepository.GetCropById(id);
-            if (crop == null) return NotFound();
-            return Ok(crop);
-        }
 
+            if (crop == null)
+            {
+                //LogWarning: Used when something unusual happens, but it's not necessarily an error (e.g., when a crop is not found).
+
+                _logger.LogWarning($"Crop with ID {id} not found."); // Log warning
+                return NotFound();
+            }
+
+            return Ok(crop);
+
+        }
         // ✅ Create a new crop
         [HttpPost]
         public async Task<ActionResult> CreateCrop([FromBody] CropDetailVM cropDetail)

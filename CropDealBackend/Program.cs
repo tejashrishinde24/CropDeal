@@ -2,10 +2,18 @@ using CropDealBackend.Interfaces;
 using CropDealBackend.Models;
 using CropDealBackend.Repository;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
+// Configure Serilog
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()      // Log to console
+    .WriteTo.File("Logs/myapp.log", rollingInterval: RollingInterval.Day) // Log to file with daily rolling
+    .CreateLogger();
 
+// Replace default .NET Core logging with Serilog
+builder.Host.UseSerilog();
 // **1. Configure Database (Entity Framework Core - SQL Server)**
 builder.Services.AddDbContext<CropDealContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));

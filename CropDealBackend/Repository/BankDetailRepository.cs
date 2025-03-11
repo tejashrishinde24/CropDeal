@@ -1,9 +1,10 @@
-﻿using CropDealBackend.Models;
+﻿using CropDealBackend.Interfaces;
+using CropDealBackend.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CropDealBackend.Repository
 {
-    public class BankDetailRepository
+    public class BankDetailRepository:IBankDetail
     {
         private CropDealContext _context;
         public BankDetailRepository(CropDealContext context)

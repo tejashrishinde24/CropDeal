@@ -11,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
+using CropDealBackend.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
-var key = builder.Configuration["Jwt:Key"] ?? "SuperSecretKey@123CropDealKeySwati"; // Use a secure key
+var key = builder.Configuration["Jwt:Key"] ?? "SuperSecretKey@123CropDealKeyHello"; // Use a secure key
 builder.Services.AddSingleton(new JwtService(key));
 
 // **1. Configure Database (Entity Framework Core - SQL Server)**
@@ -30,6 +31,11 @@ builder.Services.AddScoped<ICropDetail, CropDetailRepository>();
 builder.Services.AddScoped<IAddonType, AddOnTypeRepository>();
 builder.Services.AddScoped<ICropType, CropTypeRepository>();
 builder.Services.AddScoped<IUserDetail, UserDetailRepository>();
+builder.Services.AddScoped<IAddOn, AddOnRepository>();
+builder.Services.AddScoped<ITransactions, TransactionsRepository>();
+builder.Services.AddScoped<ISubscription, SubscriptionRepository>();
+builder.Services.AddScoped<IInvoice, InvoiceRepository>();
+builder.Services.AddScoped<IBankDetail, BankDetailRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

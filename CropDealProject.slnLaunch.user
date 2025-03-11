@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "CropDealBackend\\CropDealBackend.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "JWTMicroservice\\JWTMicroservice.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -31,6 +31,7 @@ namespace JWTMicroservice.Controllers
             _jwtService = jwtService; // ✅ Ensure this is initialized correctly
         }
 
+  
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
@@ -59,7 +60,7 @@ namespace JWTMicroservice.Controllers
                 return BadRequest(new { message = "User already exists" });
 
             if (user.Role != "Farmer" && user.Role != "Dealer")
-                return BadRequest(new { message = "Only Customer and Employee can be registered" });
+                return BadRequest(new { message = "Only Farmer and Dealer can be registered" });
 
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password); // ✅ Secure password hashing
             _context.UserDetails.Add(user);

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace CropDealBackend.Repository
 {
-    public class InvoiceRepository
+    public class InvoiceRepository:IInvoice
     {
 
             private readonly CropDealContext _context;

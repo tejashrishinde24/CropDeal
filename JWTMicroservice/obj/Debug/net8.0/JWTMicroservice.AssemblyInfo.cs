@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JWTMicroservice")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d6940d8da1b528c5ac77de6b8aa8ab16f335c6e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c69d650745e1b8241a547c4f1f367b77fa6a71a")]
 [assembly: System.Reflection.AssemblyProductAttribute("JWTMicroservice")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JWTMicroservice")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

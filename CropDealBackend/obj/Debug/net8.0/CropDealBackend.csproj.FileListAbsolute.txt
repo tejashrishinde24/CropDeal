@@ -288,3 +288,12 @@ C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\runt
 C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\obj\Debug\net8.0\CropDealBackend.sourcelink.json
 C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\Serilog.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\bin\Debug\net8.0\Serilog.Sinks.File.dll

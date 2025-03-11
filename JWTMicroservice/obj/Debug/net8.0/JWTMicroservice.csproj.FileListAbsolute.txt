@@ -303,3 +303,12 @@ C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\obj\Debug\net8.0\refi
 C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\obj\Debug\net8.0\JWTMicroservice.pdb
 C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\obj\Debug\net8.0\JWTMicroservice.genruntimeconfig.cache
 C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\obj\Debug\net8.0\ref\JWTMicroservice.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Serilog.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Serilog.Sinks.File.dll
