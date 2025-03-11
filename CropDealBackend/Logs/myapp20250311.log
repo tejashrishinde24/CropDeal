@@ -1,0 +1,13 @@
+2025-03-11 17:30:15.766 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-11 17:30:15.830 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-11 17:30:16.029 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-11 17:30:16.033 +05:30 [INF] Hosting environment: Development
+2025-03-11 17:30:16.035 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-11 17:30:17.433 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-11 17:30:18.643 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 1223.7131ms
+2025-03-11 17:30:18.684 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-11 17:30:18.708 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 24.4772ms
+2025-03-11 17:30:18.725 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-11 17:30:18.807 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.3135ms
+2025-03-11 17:30:18.966 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-11 17:30:19.153 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 187.7384ms
