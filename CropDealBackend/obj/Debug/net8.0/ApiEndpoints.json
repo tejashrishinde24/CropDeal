@@ -1904,6 +1904,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CropDealBackend.Controllers.PaymentController",
+    "Method": "CompletePayment",
+    "RelativePath": "api/Payment/CompletePayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "paymentDto",
+        "Type": "CropDealBackend.Models.PaymentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CropDealBackend.Controllers.PaymentController",
+    "Method": "ProcessPayment",
+    "RelativePath": "api/Payment/ProcessPayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "paymentDto",
+        "Type": "CropDealBackend.Models.PaymentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CropDealBackend.Controllers.SubscriptionController",
     "Method": "GetAllSubscriptions",
     "RelativePath": "api/Subscription",

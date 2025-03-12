@@ -41,7 +41,7 @@ builder.Services.AddScoped<ITransactions, TransactionsRepository>();
 builder.Services.AddScoped<ISubscription, SubscriptionRepository>();
 builder.Services.AddScoped<IInvoice, InvoiceRepository>();
 builder.Services.AddScoped<IBankDetail, BankDetailRepository>();
-
+builder.Services.AddScoped<IPaymentService, PaymentService>();
 var app = builder.Build();
 
 

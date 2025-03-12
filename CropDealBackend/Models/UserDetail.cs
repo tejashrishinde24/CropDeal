@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CropDealBackend.Models
 {
 
-    public partial class UserDetail
+    public class UserDetail
     {
         public int Id { get; set; }
 

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace CropDealBackend.Models
 {
 
-    public partial class Notification
+    public class Notification
     {
         public int Id { get; set; }
 

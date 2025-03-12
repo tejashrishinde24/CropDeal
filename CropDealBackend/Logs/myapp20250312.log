@@ -98,3 +98,632 @@ ORDER BY [n].[CreatedAt] DESC
 2025-03-12 07:40:32.992 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.5239ms
 2025-03-12 07:40:33.048 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
 2025-03-12 07:40:33.166 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.0485ms
+2025-03-12 12:45:24.698 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 12:45:24.738 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 12:45:24.816 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 12:45:24.817 +05:30 [INF] Hosting environment: Development
+2025-03-12 12:45:24.817 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 12:45:26.353 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 12:45:26.867 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 526.4451ms
+2025-03-12 12:45:26.907 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 12:45:26.920 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 12:45:26.960 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 53.3613ms
+2025-03-12 12:45:27.367 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 447.4851ms
+2025-03-12 12:45:27.418 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 12:45:27.561 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 143.3197ms
+2025-03-12 12:47:25.999 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 137
+2025-03-12 12:47:26.022 +05:30 [INF] Executing endpoint 'PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 12:47:26.050 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller PaymentController (CropDealBackend).
+2025-03-12 12:47:26.966 +05:30 [INF] Executed action PaymentController.ProcessPayment (CropDealBackend) in 907.9153ms
+2025-03-12 12:47:26.970 +05:30 [INF] Executed endpoint 'PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 12:47:26.976 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Stripe.StripeException: Invalid API Key provided: sk_test_*********3412
+   at Stripe.LiveApiRequestor.ProcessResponse[T](StripeResponse response, ApiMode apiMode) in /_/src/Stripe.net/Infrastructure/Public/LiveApiRequestor.cs:line 245
+   at Stripe.LiveApiRequestor.RequestAsync[T](BaseAddress baseAddress, HttpMethod method, String path, BaseOptions options, RequestOptions requestOptions, CancellationToken cancellationToken) in /_/src/Stripe.net/Infrastructure/Public/LiveApiRequestor.cs:line 110
+   at Stripe.Service.RequestAsync[T](BaseAddress baseAddress, HttpMethod method, String path, BaseOptions options, RequestOptions requestOptions, CancellationToken cancellationToken) in /_/src/Stripe.net/Services/_base/Service.cs:line 100
+   at CropDealBackend.Repository.PaymentService.ProcessPaymentAsync(PaymentDto paymentDto) in C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\Repository\PaymentService.cs:line 27
+   at PaymentController.ProcessPayment(PaymentDto paymentDto) in C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\Controllers\PaymentController.cs:line 41
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-12 12:47:27.050 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 500 null text/plain; charset=utf-8 1050.9945ms
+2025-03-12 13:04:54.155 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 13:04:54.181 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 13:04:54.262 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 13:04:54.265 +05:30 [INF] Hosting environment: Development
+2025-03-12 13:04:54.268 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 13:04:55.220 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 13:04:55.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 192.5421ms
+2025-03-12 13:04:55.412 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 13:04:55.412 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 13:04:55.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 13.1284ms
+2025-03-12 13:04:55.449 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.5678ms
+2025-03-12 13:04:55.499 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 13:04:55.616 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 116.664ms
+2025-03-12 13:07:19.343 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 13:07:19.390 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 13:07:19.522 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 13:07:19.524 +05:30 [INF] Hosting environment: Development
+2025-03-12 13:07:19.524 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 13:07:20.226 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 13:07:20.538 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 323.5539ms
+2025-03-12 13:07:20.553 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 13:07:20.553 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 13:07:20.569 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 16.6075ms
+2025-03-12 13:07:20.619 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.9486ms
+2025-03-12 13:07:20.661 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 13:07:20.730 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.9023ms
+2025-03-12 13:08:02.567 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 134
+2025-03-12 13:08:02.589 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 13:08:02.613 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 13:08:03.643 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 1026.2919ms
+2025-03-12 13:08:03.648 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 13:08:03.651 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Stripe.StripeException: The payment method type "UPI" is invalid. Please ensure the provided type is activated in your dashboard (https://dashboard.stripe.com/account/payments/settings) and your account is enabled for any preview features that you are trying to use.
+   at Stripe.LiveApiRequestor.ProcessResponse[T](StripeResponse response, ApiMode apiMode) in /_/src/Stripe.net/Infrastructure/Public/LiveApiRequestor.cs:line 245
+   at Stripe.LiveApiRequestor.RequestAsync[T](BaseAddress baseAddress, HttpMethod method, String path, BaseOptions options, RequestOptions requestOptions, CancellationToken cancellationToken) in /_/src/Stripe.net/Infrastructure/Public/LiveApiRequestor.cs:line 110
+   at Stripe.Service.RequestAsync[T](BaseAddress baseAddress, HttpMethod method, String path, BaseOptions options, RequestOptions requestOptions, CancellationToken cancellationToken) in /_/src/Stripe.net/Services/_base/Service.cs:line 100
+   at CropDealBackend.Repository.PaymentService.ProcessPaymentAsync(PaymentDto paymentDto) in C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\Repository\PaymentService.cs:line 27
+   at CropDealBackend.Controllers.PaymentController.ProcessPayment(PaymentDto paymentDto) in C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\Controllers\PaymentController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-12 13:08:03.698 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 500 null text/plain; charset=utf-8 1130.4511ms
+2025-03-12 13:08:24.436 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 135
+2025-03-12 13:08:24.447 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 13:08:24.452 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 13:08:24.939 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 13:08:24.950 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 496.3164ms
+2025-03-12 13:08:24.953 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 13:08:24.953 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 517.6153ms
+2025-03-12 13:43:34.442 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 135
+2025-03-12 13:43:34.453 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 13:43:34.458 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 13:43:35.139 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 13:43:35.147 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 687.4111ms
+2025-03-12 13:43:35.149 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 13:43:35.151 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 400 null application/json; charset=utf-8 709.7772ms
+2025-03-12 13:54:32.970 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 13:54:33.016 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 13:54:33.121 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 13:54:33.122 +05:30 [INF] Hosting environment: Development
+2025-03-12 13:54:33.123 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 13:54:33.901 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 13:54:34.187 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 295.7734ms
+2025-03-12 13:54:34.199 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 13:54:34.199 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 13:54:34.207 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 8.3586ms
+2025-03-12 13:54:34.249 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.1581ms
+2025-03-12 13:54:34.287 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 13:54:34.387 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.4398ms
+2025-03-12 13:55:37.358 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 160
+2025-03-12 13:55:37.382 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 13:55:37.398 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 13:55:38.400 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 13:55:38.411 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 1001.6799ms
+2025-03-12 13:55:38.415 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 13:55:38.418 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 1059.7344ms
+2025-03-12 13:56:00.690 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 160
+2025-03-12 13:56:00.709 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 13:56:00.718 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 13:56:01.069 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 13:56:01.076 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 353.5525ms
+2025-03-12 13:56:01.079 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 13:56:01.080 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 400 null application/json; charset=utf-8 391.3994ms
+2025-03-12 13:58:26.742 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 13:58:26.771 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 13:58:26.843 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 13:58:26.844 +05:30 [INF] Hosting environment: Development
+2025-03-12 13:58:26.844 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 13:58:27.874 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 13:58:28.166 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 301.4579ms
+2025-03-12 13:58:28.194 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 13:58:28.200 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 5.841ms
+2025-03-12 13:58:28.207 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 13:58:28.247 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.7741ms
+2025-03-12 13:58:28.341 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 13:58:28.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 84.6286ms
+2025-03-12 13:59:22.142 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 160
+2025-03-12 13:59:22.158 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 13:59:22.175 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 13:59:23.167 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 13:59:23.176 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 996.3802ms
+2025-03-12 13:59:23.178 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 13:59:23.179 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 1040.4746ms
+2025-03-12 14:00:17.966 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 14:00:18.005 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 14:00:18.099 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 14:00:18.100 +05:30 [INF] Hosting environment: Development
+2025-03-12 14:00:18.101 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 14:00:19.286 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 14:00:19.496 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 216.9873ms
+2025-03-12 14:00:19.504 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 14:00:19.504 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 14:00:19.512 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 8.1355ms
+2025-03-12 14:00:19.551 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.0989ms
+2025-03-12 14:00:19.581 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 14:00:19.628 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.1565ms
+2025-03-12 14:01:00.682 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 160
+2025-03-12 14:01:00.699 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:01:00.715 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:01:01.684 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:01:01.692 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 970.3317ms
+2025-03-12 14:01:01.695 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:01:01.698 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 1016.066ms
+2025-03-12 14:10:10.734 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 14:10:10.780 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 14:10:10.900 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 14:10:10.902 +05:30 [INF] Hosting environment: Development
+2025-03-12 14:10:10.903 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 14:10:11.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 14:10:11.811 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 255.9913ms
+2025-03-12 14:10:11.862 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 14:10:11.862 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 14:10:11.873 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 11.8402ms
+2025-03-12 14:10:11.907 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.2526ms
+2025-03-12 14:10:11.941 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 14:10:11.964 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Payment/CompletePayment" for actions - CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend),CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-12 14:10:11.971 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 30.8403ms
+2025-03-12 14:10:38.196 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 14:10:38.234 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 14:10:38.331 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 14:10:38.333 +05:30 [INF] Hosting environment: Development
+2025-03-12 14:10:38.334 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 14:10:40.024 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 14:10:40.615 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 609.5802ms
+2025-03-12 14:10:40.681 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 14:10:40.697 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 15.7768ms
+2025-03-12 14:10:40.700 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 14:10:40.792 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 92.3438ms
+2025-03-12 14:10:40.941 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 14:10:41.000 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Payment/CompletePayment" for actions - CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend),CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-12 14:10:41.012 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 71.6451ms
+2025-03-12 14:11:22.997 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 14:11:23.038 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 14:11:23.116 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 14:11:23.117 +05:30 [INF] Hosting environment: Development
+2025-03-12 14:11:23.118 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 14:11:24.054 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 14:11:24.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 369.4856ms
+2025-03-12 14:11:24.446 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 14:11:24.450 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 14:11:24.454 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 7.7827ms
+2025-03-12 14:11:24.485 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.7438ms
+2025-03-12 14:11:24.576 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 14:11:24.672 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 96.1977ms
+2025-03-12 14:20:16.104 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 14:20:16.153 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 14:20:16.271 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 14:20:16.273 +05:30 [INF] Hosting environment: Development
+2025-03-12 14:20:16.274 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 14:20:17.024 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 14:20:17.273 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 261.8232ms
+2025-03-12 14:20:17.284 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 14:20:17.285 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 14:20:17.292 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 7.9514ms
+2025-03-12 14:20:17.330 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.283ms
+2025-03-12 14:20:17.378 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 14:20:17.452 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.8141ms
+2025-03-12 14:23:09.059 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 14:23:09.265 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 14:23:09.401 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 14:23:09.402 +05:30 [INF] Hosting environment: Development
+2025-03-12 14:23:09.403 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 14:23:09.670 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 14:23:09.923 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 262.9003ms
+2025-03-12 14:23:09.942 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 14:23:09.942 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 14:23:09.950 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 9.0681ms
+2025-03-12 14:23:09.984 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.3641ms
+2025-03-12 14:23:10.017 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 14:23:10.056 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.9739ms
+2025-03-12 14:23:59.323 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 135
+2025-03-12 14:23:59.341 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:23:59.359 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:24:00.471 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:24:00.482 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 1110.8139ms
+2025-03-12 14:24:00.485 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:24:00.494 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 1172.2062ms
+2025-03-12 14:24:23.152 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 135
+2025-03-12 14:24:23.168 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:24:23.173 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:24:23.569 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:24:23.575 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 401.0433ms
+2025-03-12 14:24:23.578 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:24:23.580 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 400 null application/json; charset=utf-8 428.0458ms
+2025-03-12 14:26:35.046 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 14:26:35.077 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 14:26:35.158 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 14:26:35.160 +05:30 [INF] Hosting environment: Development
+2025-03-12 14:26:35.162 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 14:26:35.962 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 14:26:36.446 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 495.22ms
+2025-03-12 14:26:36.586 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 14:26:36.586 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 14:26:36.597 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 11.1133ms
+2025-03-12 14:26:36.648 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.8876ms
+2025-03-12 14:26:36.799 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 14:26:36.874 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.3723ms
+2025-03-12 14:27:24.398 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 160
+2025-03-12 14:27:24.415 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:27:24.436 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:27:25.724 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:27:25.735 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 1289.7281ms
+2025-03-12 14:27:25.739 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:27:25.742 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 1344.4647ms
+2025-03-12 14:27:52.933 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 219
+2025-03-12 14:27:52.949 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:27:52.955 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:27:53.328 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:27:53.336 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 379.8691ms
+2025-03-12 14:27:53.338 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:27:53.339 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 400 null application/json; charset=utf-8 406.9685ms
+2025-03-12 14:28:28.805 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/api/Payment/CompletePayment - null null
+2025-03-12 14:28:28.834 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-03-12 14:28:28.838 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-03-12 14:28:28.841 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/api/Payment/CompletePayment - 405 0 null 36.742ms
+2025-03-12 14:28:31.355 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/api/Payment/CompletePayment - null null
+2025-03-12 14:28:31.360 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-03-12 14:28:31.364 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-03-12 14:28:31.365 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/api/Payment/CompletePayment - 405 0 null 11.0791ms
+2025-03-12 14:28:32.141 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/api/Payment/CompletePayment - null null
+2025-03-12 14:28:32.150 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-03-12 14:28:32.156 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-03-12 14:28:32.157 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/api/Payment/CompletePayment - 405 0 null 16.5685ms
+2025-03-12 14:28:32.514 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/api/Payment/CompletePayment - null null
+2025-03-12 14:28:32.521 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-03-12 14:28:32.524 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-03-12 14:28:32.526 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/api/Payment/CompletePayment - 405 0 null 11.5026ms
+2025-03-12 14:29:27.591 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 219
+2025-03-12 14:29:27.610 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:29:27.612 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:29:28.656 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:29:28.664 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 1049.1492ms
+2025-03-12 14:29:28.673 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:29:28.674 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 400 null application/json; charset=utf-8 1083.6144ms
+2025-03-12 14:30:12.602 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 186
+2025-03-12 14:30:12.621 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:30:12.622 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:30:12.962 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:30:12.967 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 343.7884ms
+2025-03-12 14:30:12.968 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:30:12.971 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 400 null application/json; charset=utf-8 369.2368ms
+2025-03-12 14:30:16.054 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 186
+2025-03-12 14:30:16.061 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:30:16.062 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:30:16.399 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:30:16.403 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 339.668ms
+2025-03-12 14:30:16.404 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:30:16.405 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 400 null application/json; charset=utf-8 351.5721ms
+2025-03-12 14:32:11.781 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 14:32:11.810 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 14:32:11.882 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 14:32:11.884 +05:30 [INF] Hosting environment: Development
+2025-03-12 14:32:11.885 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 14:32:12.657 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 14:32:12.964 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 316.8888ms
+2025-03-12 14:32:12.973 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 14:32:12.973 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 14:32:12.988 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 15.516ms
+2025-03-12 14:32:13.017 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.7331ms
+2025-03-12 14:32:13.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 14:32:13.105 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.6041ms
+2025-03-12 14:32:51.294 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 160
+2025-03-12 14:32:51.307 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:32:51.326 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:32:52.407 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:32:52.418 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 1082.4857ms
+2025-03-12 14:32:52.420 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:32:52.422 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 1128.9575ms
+2025-03-12 14:33:23.318 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 187
+2025-03-12 14:33:23.325 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:33:23.331 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:33:23.817 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:33:23.824 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 490.14ms
+2025-03-12 14:33:23.826 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:33:23.827 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 400 null application/json; charset=utf-8 508.999ms
+2025-03-12 14:38:15.737 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 14:38:15.768 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 14:38:15.863 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 14:38:15.864 +05:30 [INF] Hosting environment: Development
+2025-03-12 14:38:15.865 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 14:38:16.923 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 14:38:17.515 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 599.686ms
+2025-03-12 14:38:17.577 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 14:38:17.582 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 14:38:17.587 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 9.6837ms
+2025-03-12 14:38:17.657 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.3632ms
+2025-03-12 14:38:17.797 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 14:38:17.904 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 106.9081ms
+2025-03-12 14:38:48.798 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 160
+2025-03-12 14:38:48.821 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:38:48.843 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:38:50.016 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:38:50.027 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 1181.0011ms
+2025-03-12 14:38:50.029 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:38:50.031 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 1233.4346ms
+2025-03-12 14:39:15.130 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 187
+2025-03-12 14:39:15.150 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:39:15.155 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:39:15.566 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:39:15.574 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 413.1367ms
+2025-03-12 14:39:15.579 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:39:15.582 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 400 null application/json; charset=utf-8 452.4524ms
+2025-03-12 14:46:56.884 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 14:46:56.923 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 14:46:57.024 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 14:46:57.027 +05:30 [INF] Hosting environment: Development
+2025-03-12 14:46:57.028 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 14:46:58.052 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 14:46:58.254 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 211.4438ms
+2025-03-12 14:46:58.267 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 14:46:58.267 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 14:46:58.281 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 13.9391ms
+2025-03-12 14:46:58.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.5835ms
+2025-03-12 14:46:58.344 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 14:46:58.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.8174ms
+2025-03-12 14:47:39.005 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 161
+2025-03-12 14:47:39.026 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:47:39.045 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:47:40.097 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2025-03-12 14:47:40.106 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 1055.9842ms
+2025-03-12 14:47:40.110 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:47:40.112 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 400 null text/plain; charset=utf-8 1106.5651ms
+2025-03-12 14:48:39.169 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 169
+2025-03-12 14:48:39.185 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:48:39.186 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:48:40.177 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:48:40.186 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 995.4864ms
+2025-03-12 14:48:40.192 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:48:40.195 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 1026.3666ms
+2025-03-12 14:49:04.513 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 195
+2025-03-12 14:49:04.536 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:49:04.540 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:49:04.921 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:49:04.929 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 387.5673ms
+2025-03-12 14:49:04.934 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:49:04.940 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 200 null application/json; charset=utf-8 426.3823ms
+2025-03-12 14:51:28.753 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 169
+2025-03-12 14:51:28.766 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:51:28.776 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:51:30.098 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:51:30.105 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 1325.873ms
+2025-03-12 14:51:30.111 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:51:30.118 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 1364.8721ms
+2025-03-12 14:51:56.958 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 195
+2025-03-12 14:51:56.974 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:51:56.977 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:51:56.985 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-12 14:51:57.001 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 22.1457ms
+2025-03-12 14:51:57.003 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:51:57.004 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 400 null application/problem+json; charset=utf-8 46.7577ms
+2025-03-12 14:52:17.870 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 195
+2025-03-12 14:52:17.873 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:52:17.875 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:52:18.240 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:52:18.244 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 364.3187ms
+2025-03-12 14:52:18.246 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:52:18.248 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 200 null application/json; charset=utf-8 378.9277ms
+2025-03-12 14:54:34.994 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 14:54:35.091 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 14:54:35.268 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 14:54:35.271 +05:30 [INF] Hosting environment: Development
+2025-03-12 14:54:35.273 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 14:54:35.764 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 14:54:35.991 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 237.3306ms
+2025-03-12 14:54:36.005 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 14:54:36.005 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 14:54:36.024 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 19.4975ms
+2025-03-12 14:54:36.054 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.7176ms
+2025-03-12 14:54:36.117 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 14:54:36.199 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.1562ms
+2025-03-12 14:55:05.679 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 195
+2025-03-12 14:55:05.690 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:55:05.711 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:55:07.365 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:55:07.377 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 1661.5871ms
+2025-03-12 14:55:07.381 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:55:07.383 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 1704.1766ms
+2025-03-12 14:55:11.671 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 168
+2025-03-12 14:55:11.683 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:55:11.684 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:55:12.656 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:55:12.662 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 975.8723ms
+2025-03-12 14:55:12.669 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:55:12.670 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 998.1553ms
+2025-03-12 14:55:39.980 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 195
+2025-03-12 14:55:39.992 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:55:39.997 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:55:41.360 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [i].[Invoice_Id], [i].[AddOnId], [i].[CropId], [i].[Dealer_Id], [i].[Farmer_Id], [i].[InvoiceDate], [i].[PricePerKg], [i].[PurchaseDate], [i].[Quantity], [i].[TotalAmount], [i].[TransactionStatus]
+FROM [Invoice] AS [i]
+WHERE [i].[Invoice_Id] = @__p_0
+2025-03-12 14:55:41.524 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime), @p5='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p8='?' (Size = 10) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Invoice] SET [AddOnId] = @p0, [CropId] = @p1, [Dealer_Id] = @p2, [Farmer_Id] = @p3, [InvoiceDate] = @p4, [PricePerKg] = @p5, [PurchaseDate] = @p6, [Quantity] = @p7, [TransactionStatus] = @p8
+OUTPUT INSERTED.[TotalAmount]
+WHERE [Invoice_Id] = @p9;
+2025-03-12 14:55:41.575 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'CropDealBackend.Models.CropDealContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the CHECK constraint "CK__Invoice__Transac__5070F446". The conflict occurred in database "CropDeal", table "dbo.Invoice", column 'TransactionStatus'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e692e52f-a9d5-42d0-8cf0-d0088b958977
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the CHECK constraint "CK__Invoice__Transac__5070F446". The conflict occurred in database "CropDeal", table "dbo.Invoice", column 'TransactionStatus'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e692e52f-a9d5-42d0-8cf0-d0088b958977
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-03-12 14:55:41.645 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 1644.5678ms
+2025-03-12 14:55:41.650 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:55:41.653 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the CHECK constraint "CK__Invoice__Transac__5070F446". The conflict occurred in database "CropDeal", table "dbo.Invoice", column 'TransactionStatus'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e692e52f-a9d5-42d0-8cf0-d0088b958977
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CropDealBackend.Controllers.PaymentController.CompletePayment(PaymentDto paymentDto) in C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend\Controllers\PaymentController.cs:line 75
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-12 14:55:41.704 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 500 null text/plain; charset=utf-8 1724.1124ms
+2025-03-12 14:56:59.248 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-12 14:56:59.286 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-12 14:56:59.361 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-12 14:56:59.364 +05:30 [INF] Hosting environment: Development
+2025-03-12 14:56:59.365 +05:30 [INF] Content root path: C:\Tejashri\Sprint\Backend\CropDealBackend\CropDealBackend
+2025-03-12 14:57:00.231 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-12 14:57:00.746 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 522.9136ms
+2025-03-12 14:57:00.749 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-12 14:57:00.749 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-12 14:57:00.761 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 12.658ms
+2025-03-12 14:57:00.805 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.1689ms
+2025-03-12 14:57:01.004 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-12 14:57:01.073 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.4066ms
+2025-03-12 14:57:28.947 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - application/json 166
+2025-03-12 14:57:28.973 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:57:28.992 +05:30 [INF] Route matched with {action = "ProcessPayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProcessPayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:57:30.662 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:57:30.673 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend) in 1676.7588ms
+2025-03-12 14:57:30.674 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.ProcessPayment (CropDealBackend)'
+2025-03-12 14:57:30.676 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/ProcessPayment - 200 null application/json; charset=utf-8 1730.068ms
+2025-03-12 14:57:48.185 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - application/json 193
+2025-03-12 14:57:48.198 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:57:48.207 +05:30 [INF] Route matched with {action = "CompletePayment", controller = "Payment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompletePayment(CropDealBackend.Models.PaymentDto) on controller CropDealBackend.Controllers.PaymentController (CropDealBackend).
+2025-03-12 14:57:49.513 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [i].[Invoice_Id], [i].[AddOnId], [i].[CropId], [i].[Dealer_Id], [i].[Farmer_Id], [i].[InvoiceDate], [i].[PricePerKg], [i].[PurchaseDate], [i].[Quantity], [i].[TotalAmount], [i].[TransactionStatus]
+FROM [Invoice] AS [i]
+WHERE [i].[Invoice_Id] = @__p_0
+2025-03-12 14:57:49.663 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@p9='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = DateTime), @p5='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p8='?' (Size = 10) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Invoice] SET [AddOnId] = @p0, [CropId] = @p1, [Dealer_Id] = @p2, [Farmer_Id] = @p3, [InvoiceDate] = @p4, [PricePerKg] = @p5, [PurchaseDate] = @p6, [Quantity] = @p7, [TransactionStatus] = @p8
+OUTPUT INSERTED.[TotalAmount]
+WHERE [Invoice_Id] = @p9;
+2025-03-12 14:57:49.680 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-12 14:57:49.683 +05:30 [INF] Executed action CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend) in 1470.2358ms
+2025-03-12 14:57:49.686 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.PaymentController.CompletePayment (CropDealBackend)'
+2025-03-12 14:57:49.691 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Payment/CompletePayment - 200 null application/json; charset=utf-8 1506.4413ms

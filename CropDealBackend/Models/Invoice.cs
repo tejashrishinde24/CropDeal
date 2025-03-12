@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace CropDealBackend.Models
 {
 
-    public partial class Invoice
+    public class Invoice
     {
         public int InvoiceId { get; set; }
 
