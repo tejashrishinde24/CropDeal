@@ -24,9 +24,7 @@ builder.Services.AddDbContext<CropDealContext>(options =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConnStr")));
 
-
-
-
+//builder.Services.AddScoped<INotification, NotificationRepository>();
 builder.Services.AddScoped<ICropDetail, CropDetailRepository>();
 builder.Services.AddScoped<IAddonType, AddOnTypeRepository>();
 builder.Services.AddScoped<ICropType, CropTypeRepository>();

@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CropDealBackend.Models;
-
-public partial class AddOnType
+namespace CropDealBackend.Models
 {
-    public int AddOnTypeId { get; set; }
 
-    public string AddOnTypeName { get; set; } = null!;
+    public partial class AddOnType
+    {
+        public int AddOnTypeId { get; set; }
 
-    public virtual ICollection<AddOn> AddOns { get; set; } = new List<AddOn>();
+        public string AddOnTypeName { get; set; } = null!;
+
+        public virtual ICollection<AddOn> AddOns { get; set; } = new List<AddOn>();
+    }
 }

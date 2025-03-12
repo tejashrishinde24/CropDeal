@@ -312,3 +312,15 @@ C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Seri
 C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\Microsoft.Extensions.Features.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\System.Net.ServerSentEvents.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Tejashri\Sprint\Backend\CropDealBackend\JWTMicroservice\bin\Debug\net8.0\System.Threading.Channels.dll

@@ -29,6 +29,8 @@ public partial class CropDealContext : DbContext
 
     public virtual DbSet<Invoice> Invoices { get; set; }
 
+    public virtual DbSet<Notification> Notifications { get; set; }
+
     public virtual DbSet<Subscription> Subscriptions { get; set; }
 
     public virtual DbSet<Transaction> Transactions { get; set; }
@@ -210,6 +212,27 @@ public partial class CropDealContext : DbContext
                 .HasForeignKey(d => d.FarmerId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Invoice__Farmer___52593CB8");
+        });
+
+        modelBuilder.Entity<Notification>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Notifica__3214EC07D8ACBCD7");
+
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.IsRead).HasDefaultValue(false);
+            entity.Property(e => e.Message).HasMaxLength(500);
+
+            entity.HasOne(d => d.Crop).WithMany(p => p.Notifications)
+                .HasForeignKey(d => d.CropId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Notifications_Crop");
+
+            entity.HasOne(d => d.Dealer).WithMany(p => p.Notifications)
+                .HasForeignKey(d => d.DealerId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Notifications_Dealer");
         });
 
         modelBuilder.Entity<Subscription>(entity =>

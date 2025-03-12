@@ -1,6 +1,7 @@
 ﻿using CropDealBackend.Interfaces;
 using CropDealBackend.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -306,5 +307,7 @@ namespace CropDealBackend.Controllers
             var crops = await _cropDetailRepository.GetPopularCropTypes();
             return Ok(crops);
         }
+        // GET: api/notifications/{dealerId}
+        
     }
 }

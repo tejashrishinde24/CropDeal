@@ -47,8 +47,33 @@ namespace CropDealBackend.Repository
                 ImageUrl = cropDetail.ImageUrl
 
             };
+            //_context.CropDetails.Add(crop);
+            //return await _context.SaveChangesAsync() > 0;
             _context.CropDetails.Add(crop);
-            return await _context.SaveChangesAsync() > 0;
+            await _context.SaveChangesAsync();
+
+            // Find dealers subscribed to this crop type
+            var subscribedDealers = _context.Subscriptions
+                .Where(s => s.CropId == crop.CropTypeId)
+                .Select(s => s.DealerId)
+                .ToList();
+
+            if (subscribedDealers.Any())
+            {
+                var notifications = subscribedDealers.Select(dealerId => new Notification
+                {
+                    DealerId = dealerId,
+                    CropId = crop.Id,
+                    Message = $"A new {crop.CropName} is available!",
+                    CreatedAt = DateTime.Now,
+                    IsRead = false
+                }).ToList();
+
+                _context.Notifications.AddRange(notifications);
+                await _context.SaveChangesAsync();
+            }
+
+            return true;
         }
 
         // ✅ Update crop details

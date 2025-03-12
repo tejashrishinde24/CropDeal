@@ -1,5 +1,6 @@
-using CropDealBackend.Interfaces;
+﻿using CropDealBackend.Interfaces;
 using CropDealBackend.Models;
+using CropDealBackend.Repositories;
 using CropDealBackend.Repository;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -15,6 +16,7 @@ Log.Logger = new LoggerConfiguration()
 // Replace default .NET Core logging with Serilog
 builder.Host.UseSerilog();
 // **1. Configure Database (Entity Framework Core - SQL Server)**
+builder.Services.AddSignalR();
 builder.Services.AddDbContext<CropDealContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -28,12 +30,20 @@ builder.Services.AddControllers()
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<INotification, NotificationRepository>();
 builder.Services.AddScoped<ICropDetail, CropDetailRepository>();
 builder.Services.AddScoped<IAddonType, AddOnTypeRepository>();
 builder.Services.AddScoped<ICropType, CropTypeRepository>();
 builder.Services.AddScoped<IUserDetail, UserDetailRepository>();
+builder.Services.AddScoped<IAddOn, AddOnRepository>();
+builder.Services.AddScoped<ITransactions, TransactionsRepository>();
+builder.Services.AddScoped<ISubscription, SubscriptionRepository>();
+builder.Services.AddScoped<IInvoice, InvoiceRepository>();
+builder.Services.AddScoped<IBankDetail, BankDetailRepository>();
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -41,6 +51,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
 
 app.UseHttpsRedirection();
 
