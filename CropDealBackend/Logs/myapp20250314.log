@@ -1,0 +1,134 @@
+2025-03-14 15:49:14.972 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-14 15:49:15.035 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-14 15:49:15.215 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-14 15:49:15.219 +05:30 [INF] Hosting environment: Development
+2025-03-14 15:49:15.222 +05:30 [INF] Content root path: C:\Tejashri\Sprint\CropDeal\CropDealBackend\CropDealBackend
+2025-03-14 15:49:18.448 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-14 15:49:19.250 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 821.0056ms
+2025-03-14 15:49:19.283 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-14 15:49:19.291 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-14 15:49:19.398 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 115.4052ms
+2025-03-14 15:49:19.679 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 395.4156ms
+2025-03-14 15:49:19.787 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-14 15:49:20.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 311.4068ms
+2025-03-14 16:54:31.900 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-14 16:54:31.951 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-14 16:54:32.129 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-14 16:54:32.131 +05:30 [INF] Hosting environment: Development
+2025-03-14 16:54:32.133 +05:30 [INF] Content root path: C:\Tejashri\Sprint\CropDeal\CropDealBackend\CropDealBackend
+2025-03-14 16:54:33.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-14 16:54:34.459 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 966.6317ms
+2025-03-14 16:54:34.745 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-14 16:54:34.745 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-14 16:54:34.765 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 22.4665ms
+2025-03-14 16:54:34.850 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 105.1307ms
+2025-03-14 16:54:35.841 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-14 16:54:35.976 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 135.5992ms
+2025-03-14 16:56:19.638 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/gateway/auth/register - application/json 210
+2025-03-14 16:56:19.655 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.GatewayController.Register (CropDealBackend)'
+2025-03-14 16:56:19.694 +05:30 [INF] Route matched with {action = "Register", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(System.Object) on controller CropDealBackend.Controllers.GatewayController (CropDealBackend).
+2025-03-14 16:56:19.750 +05:30 [INF] Forwarding register request to: /api/auth/register
+2025-03-14 16:56:19.830 +05:30 [ERR] Error calling Register API: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+2025-03-14 16:56:19.841 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-03-14 16:56:19.858 +05:30 [INF] Executed action CropDealBackend.Controllers.GatewayController.Register (CropDealBackend) in 158.4837ms
+2025-03-14 16:56:19.868 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.GatewayController.Register (CropDealBackend)'
+2025-03-14 16:56:19.869 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/gateway/auth/register - 500 null application/json; charset=utf-8 232.0156ms
+2025-03-14 16:59:07.583 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-14 16:59:07.631 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-14 16:59:07.733 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-14 16:59:07.735 +05:30 [INF] Hosting environment: Development
+2025-03-14 16:59:07.738 +05:30 [INF] Content root path: C:\Tejashri\Sprint\CropDeal\CropDealBackend\CropDealBackend
+2025-03-14 16:59:09.363 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-14 16:59:10.105 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 742.9757ms
+2025-03-14 16:59:10.130 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-14 16:59:10.132 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-14 16:59:10.197 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 65.1102ms
+2025-03-14 16:59:10.242 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.3074ms
+2025-03-14 16:59:10.320 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-14 16:59:10.496 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 176.5443ms
+2025-03-14 16:59:43.952 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/gateway/auth/register - application/json 210
+2025-03-14 16:59:43.965 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.GatewayController.Register (CropDealBackend)'
+2025-03-14 16:59:43.990 +05:30 [INF] Route matched with {action = "Register", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(System.Object) on controller CropDealBackend.Controllers.GatewayController (CropDealBackend).
+2025-03-14 16:59:44.037 +05:30 [INF] Forwarding register request to: https://localhost:7009/api/auth/register
+2025-03-14 16:59:44.046 +05:30 [INF] Start processing HTTP request POST https://localhost:7009/api/auth/register
+2025-03-14 16:59:44.055 +05:30 [INF] Sending HTTP request POST https://localhost:7009/api/auth/register
+2025-03-14 16:59:47.114 +05:30 [INF] Received HTTP response headers after 3053.3159ms - 400
+2025-03-14 16:59:47.118 +05:30 [INF] End processing HTTP request after 3073.2328ms - 400
+2025-03-14 16:59:47.124 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-03-14 16:59:47.128 +05:30 [INF] Executed action CropDealBackend.Controllers.GatewayController.Register (CropDealBackend) in 3129.0379ms
+2025-03-14 16:59:47.131 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.GatewayController.Register (CropDealBackend)'
+2025-03-14 16:59:47.134 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/gateway/auth/register - 400 null text/plain; charset=utf-8 3180.7252ms
+2025-03-14 17:00:18.985 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/gateway/auth/register - application/json 220
+2025-03-14 17:00:19.013 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.GatewayController.Register (CropDealBackend)'
+2025-03-14 17:00:19.017 +05:30 [INF] Route matched with {action = "Register", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(System.Object) on controller CropDealBackend.Controllers.GatewayController (CropDealBackend).
+2025-03-14 17:00:19.030 +05:30 [INF] Forwarding register request to: https://localhost:7009/api/auth/register
+2025-03-14 17:00:19.031 +05:30 [INF] Start processing HTTP request POST https://localhost:7009/api/auth/register
+2025-03-14 17:00:19.032 +05:30 [INF] Sending HTTP request POST https://localhost:7009/api/auth/register
+2025-03-14 17:00:19.593 +05:30 [INF] Received HTTP response headers after 556.3889ms - 200
+2025-03-14 17:00:19.597 +05:30 [INF] End processing HTTP request after 566.2063ms - 200
+2025-03-14 17:00:19.602 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-03-14 17:00:19.605 +05:30 [INF] Executed action CropDealBackend.Controllers.GatewayController.Register (CropDealBackend) in 576.7328ms
+2025-03-14 17:00:19.613 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.GatewayController.Register (CropDealBackend)'
+2025-03-14 17:00:19.617 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/gateway/auth/register - 200 null text/plain; charset=utf-8 632.7672ms
+2025-03-14 17:01:33.511 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/gateway/auth/login - application/json 84
+2025-03-14 17:01:33.519 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.GatewayController.Login (CropDealBackend)'
+2025-03-14 17:01:33.526 +05:30 [INF] Route matched with {action = "Login", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.Object) on controller CropDealBackend.Controllers.GatewayController (CropDealBackend).
+2025-03-14 17:01:33.535 +05:30 [INF] Forwarding login request to: https://localhost:7009//api/auth/login
+2025-03-14 17:01:33.539 +05:30 [INF] Start processing HTTP request POST https://localhost:7009//api/auth/login
+2025-03-14 17:01:33.545 +05:30 [INF] Sending HTTP request POST https://localhost:7009//api/auth/login
+2025-03-14 17:01:33.562 +05:30 [INF] Received HTTP response headers after 15.7261ms - 404
+2025-03-14 17:01:33.564 +05:30 [INF] End processing HTTP request after 24.569ms - 404
+2025-03-14 17:01:33.565 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-03-14 17:01:33.568 +05:30 [INF] Executed action CropDealBackend.Controllers.GatewayController.Login (CropDealBackend) in 34.5037ms
+2025-03-14 17:01:33.569 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.GatewayController.Login (CropDealBackend)'
+2025-03-14 17:01:33.571 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/gateway/auth/login - 404 0 text/plain; charset=utf-8 59.9153ms
+2025-03-14 17:02:54.826 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-14 17:02:54.871 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-14 17:02:54.993 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-14 17:02:54.994 +05:30 [INF] Hosting environment: Development
+2025-03-14 17:02:54.996 +05:30 [INF] Content root path: C:\Tejashri\Sprint\CropDeal\CropDealBackend\CropDealBackend
+2025-03-14 17:02:56.494 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-14 17:02:57.120 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 635.5551ms
+2025-03-14 17:02:57.137 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-14 17:02:57.138 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-14 17:02:57.148 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 10.4224ms
+2025-03-14 17:02:57.205 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.1778ms
+2025-03-14 17:02:57.262 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-14 17:02:57.472 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 210.3397ms
+2025-03-14 17:04:07.947 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/gateway/auth/login - application/json 87
+2025-03-14 17:04:07.963 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.GatewayController.Login (CropDealBackend)'
+2025-03-14 17:04:07.988 +05:30 [INF] Route matched with {action = "Login", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.Object) on controller CropDealBackend.Controllers.GatewayController (CropDealBackend).
+2025-03-14 17:04:08.021 +05:30 [INF] Forwarding register request to: https://localhost:7009/api/auth/login
+2025-03-14 17:04:08.031 +05:30 [INF] Start processing HTTP request POST https://localhost:7009/api/auth/login
+2025-03-14 17:04:08.035 +05:30 [INF] Sending HTTP request POST https://localhost:7009/api/auth/login
+2025-03-14 17:04:10.193 +05:30 [INF] Received HTTP response headers after 2155.3671ms - 200
+2025-03-14 17:04:10.198 +05:30 [INF] End processing HTTP request after 2171.4121ms - 200
+2025-03-14 17:04:10.209 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-03-14 17:04:10.214 +05:30 [INF] Executed action CropDealBackend.Controllers.GatewayController.Login (CropDealBackend) in 2221.1404ms
+2025-03-14 17:04:10.216 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.GatewayController.Login (CropDealBackend)'
+2025-03-14 17:04:10.219 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/gateway/auth/login - 200 null text/plain; charset=utf-8 2271.8694ms
+2025-03-14 17:12:10.236 +05:30 [INF] Now listening on: https://localhost:7265
+2025-03-14 17:12:10.284 +05:30 [INF] Now listening on: http://localhost:5149
+2025-03-14 17:12:10.422 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-14 17:12:10.425 +05:30 [INF] Hosting environment: Development
+2025-03-14 17:12:10.428 +05:30 [INF] Content root path: C:\Tejashri\Sprint\CropDeal\CropDealBackend\CropDealBackend
+2025-03-14 17:12:16.136 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2025-03-14 17:12:16.593 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 468.3021ms
+2025-03-14 17:12:16.620 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-14 17:12:16.621 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2025-03-14 17:12:16.950 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 330.2155ms
+2025-03-14 17:12:17.016 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 394.8264ms
+2025-03-14 17:13:13.209 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2025-03-14 17:13:13.302 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 94.232ms
+2025-03-14 17:15:32.721 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/gateway/auth/login - application/json 87
+2025-03-14 17:15:32.741 +05:30 [INF] Executing endpoint 'CropDealBackend.Controllers.GatewayController.Login (CropDealBackend)'
+2025-03-14 17:15:32.767 +05:30 [INF] Route matched with {action = "Login", controller = "Gateway"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.Object) on controller CropDealBackend.Controllers.GatewayController (CropDealBackend).
+2025-03-14 17:15:32.805 +05:30 [INF] Forwarding register request to: https://localhost:7009/api/auth/login
+2025-03-14 17:15:32.814 +05:30 [INF] Start processing HTTP request POST https://localhost:7009/api/auth/login
+2025-03-14 17:15:32.819 +05:30 [INF] Sending HTTP request POST https://localhost:7009/api/auth/login
+2025-03-14 17:15:35.893 +05:30 [INF] Received HTTP response headers after 3071.0114ms - 200
+2025-03-14 17:15:35.898 +05:30 [INF] End processing HTTP request after 3087.0777ms - 200
+2025-03-14 17:15:35.903 +05:30 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-03-14 17:15:35.908 +05:30 [INF] Executed action CropDealBackend.Controllers.GatewayController.Login (CropDealBackend) in 3137.0234ms
+2025-03-14 17:15:35.909 +05:30 [INF] Executed endpoint 'CropDealBackend.Controllers.GatewayController.Login (CropDealBackend)'
+2025-03-14 17:15:35.911 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/gateway/auth/login - 200 null text/plain; charset=utf-8 3189.9041ms

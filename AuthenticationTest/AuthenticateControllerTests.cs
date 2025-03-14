@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using JWTMicroservice.Controllers;
 using JWTMicroservice.Authentication;
-using CropDealBackend.Models;
+using JWTMicroservice.Models;
 
 namespace AuthenticateControllerTests
 {

@@ -9768,11 +9768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\CropDealBackend.csproj",
+      "projectUniqueName": "C:\\Tejashri\\Sprint\\CropDeal\\CropDealBackend\\CropDealBackend\\CropDealBackend.csproj",
       "projectName": "CropDealBackend",
-      "projectPath": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\CropDealBackend.csproj",
+      "projectPath": "C:\\Tejashri\\Sprint\\CropDeal\\CropDealBackend\\CropDealBackend\\CropDealBackend.csproj",
       "packagesPath": "C:\\Users\\TEJASHIV\\.nuget\\packages\\",
-      "outputPath": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\obj\\",
+      "outputPath": "C:\\Tejashri\\Sprint\\CropDeal\\CropDealBackend\\CropDealBackend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

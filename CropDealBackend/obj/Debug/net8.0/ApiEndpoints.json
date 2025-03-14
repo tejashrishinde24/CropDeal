@@ -1560,6 +1560,38 @@
     ]
   },
   {
+    "ContainingType": "CropDealBackend.Controllers.GatewayController",
+    "Method": "Login",
+    "RelativePath": "api/gateway/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CropDealBackend.Controllers.GatewayController",
+    "Method": "Register",
+    "RelativePath": "api/gateway/auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerRequest",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CropDealBackend.Controllers.InvoiceController",
     "Method": "UpdateInvoice",
     "RelativePath": "api/Invoice/{id}",

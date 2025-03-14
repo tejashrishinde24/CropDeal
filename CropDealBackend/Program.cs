@@ -2,7 +2,9 @@
 using CropDealBackend.Models;
 using CropDealBackend.Repositories;
 using CropDealBackend.Repository;
+using CropDealBackend.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using Serilog;
 using System;
 
@@ -12,6 +14,14 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()      // Log to console
     .WriteTo.File("Logs/myapp.log", rollingInterval: RollingInterval.Day) // Log to file with daily rolling
     .CreateLogger();
+builder.Services.AddHttpClient("JWTMicroservice", client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["Microservices:JWTMicroservice"]);
+});
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Main API", Version = "v1" });
+});
 
 // Replace default .NET Core logging with Serilog
 builder.Host.UseSerilog();
@@ -31,6 +41,7 @@ builder.Services.AddControllers()
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<JWTMicroservice>();
 builder.Services.AddScoped<INotification, NotificationRepository>();
 builder.Services.AddScoped<ICropDetail, CropDetailRepository>();
 builder.Services.AddScoped<IAddonType, AddOnTypeRepository>();
@@ -52,7 +63,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Main API V1");
+        c.SwaggerEndpoint("https://localhost:7009/swagger/v1/swagger.json", "Authentication API"); // External API
+    });
+}
 
 app.UseHttpsRedirection();
 

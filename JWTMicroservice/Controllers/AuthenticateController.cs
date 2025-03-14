@@ -1,10 +1,9 @@
 ﻿using JWTMicroservice.Authentication;
-using CropDealBackend.Interfaces;
-using CropDealBackend.Models;
+//using CropDealBackend.Interfaces;
+using JWTMicroservice.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;

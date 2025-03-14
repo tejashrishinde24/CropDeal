@@ -1,5 +1,5 @@
 ﻿using System.Reflection.Emit;
-using CropDealBackend.Models;
+using JWTMicroservice.Models;
 using JWTMicroservice.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -17,19 +17,19 @@ namespace JWTMicroservice.Authentication
             base.OnModelCreating(builder);
 
             // Define relationship between ApplicationUser and UserDetails
-            builder.Entity<Invoice>()
-                .HasOne(i => i.Dealer)
-                .WithMany(u => u.InvoiceDealers)
-                .HasForeignKey(i => i.DealerId)
-                .OnDelete(DeleteBehavior.NoAction);
+            //builder.Entity<Invoice>()
+            //    .HasOne(i => i.Dealer)
+            //    .WithMany(u => u.InvoiceDealers)
+            //    .HasForeignKey(i => i.DealerId)
+            //    .OnDelete(DeleteBehavior.NoAction);
 
-            builder.Entity<Invoice>()
-                .HasOne(i => i.Farmer)
-                .WithMany(u => u.InvoiceFarmers)
-                .HasForeignKey(i => i.FarmerId)
-                .OnDelete(DeleteBehavior.NoAction);
+            //builder.Entity<Invoice>()
+            //    .HasOne(i => i.Farmer)
+            //    .WithMany(u => u.InvoiceFarmers)
+            //    .HasForeignKey(i => i.FarmerId)
+            //    .OnDelete(DeleteBehavior.NoAction);
 
-            builder.Entity<Invoice>().Ignore(i => i.Dealer);
+            //builder.Entity<Invoice>().Ignore(i => i.Dealer);
 
         }
     }

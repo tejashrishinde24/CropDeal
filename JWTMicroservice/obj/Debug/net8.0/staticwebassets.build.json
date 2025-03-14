@@ -1,23 +1,11 @@
 {
   "Version": 1,
-  "Hash": "cbpGsdib0lNHwCXh8NV4WqWnXSmYXzkgHjAvVLNttD8=",
+  "Hash": "e+LxqEPNt0/+Cdl3KtyQQA8pd9NQIOwNOrWVrERW6C0=",
   "Source": "JWTMicroservice",
   "BasePath": "_content/JWTMicroservice",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [
-    {
-      "Identity": "C:\\Tejashri\\Sprint\\Backend\\CropDealBackend\\CropDealBackend\\CropDealBackend.csproj",
-      "Version": 2,
-      "Source": "CropDealBackend",
-      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
-      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
-    }
-  ],
+  "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
   "Assets": [],
   "Endpoints": []

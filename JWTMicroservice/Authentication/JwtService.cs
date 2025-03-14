@@ -2,7 +2,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using CropDealBackend.Models;
+using JWTMicroservice.Models;
 using Microsoft.IdentityModel.Tokens;
 
 public class JwtService
